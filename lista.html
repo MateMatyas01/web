@@ -1,50 +1,72 @@
 <!DOCTYPE html>
 <html lang="hu">
 <head>
+  <link rel="stylesheet" href="mystyle.css">
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mate oldala</title>
+    <title>Mate Oldala</title>
 </head>
-<body>
-    <div class="sidebar">
-        <table>
-            <tr>
-                <button style="background-color: #ffffff; scale: 1;font-size: 0.6cm; font-style: italic ; font-family: fantasy; border-color: #470092d8;" onclick="document.location='index.html'"> RÓLAM 
-                </button>
-            </tr>
-            <tr><button style="background-color: #ffffff; scale: 1;font-size: 0.6cm; font-style: italic ; font-family: fantasy; border-color: #470092d8;" onclick="document.location='keplink.html'"> Képlinkes
-            </button>
-            </tr>
-            <tr>
-                <button style="background-color: #ffffff; scale: 1;font-size: 0.6cm; font-style: italic ; font-family: fantasy; border-color: #470092d8; border-color: rgb(197, 0, 0); border-width: 5px; border-bottom-right-radius: 11px" onclick="document.location='lista.html'"> LISTÁK
-                </button>
-            </tr>
-            <tr>
-                <button style="background-color: #ffffff; scale: 1;font-size: 0.6cm; font-style: italic ; font-family: fantasy; border-color:#470092d8;" onclick="document.location='orarend.html'"> ÓRAREND
-            </tr>
-            <tr>
-                <button style="background-color: #ffffff; scale: 1;font-size: 0.6cm; font-style: italic ; font-family: fantasy; border-color:#470092d8;" onclick="document.location='pizza.html'"> PIZZA
-              </tr>
-        </table>
-      </div>
+<body bgcolor="white">
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(34, 34, 34);
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: rgb(55, 86, 104);
+}
+
+.active {
+  background-color: #3f5158;
+}
+</style>
+  <ul>
+    <li><a href="index.html">Rólam</a></li>
+    <li><a href="keplink.html">Képlink</a></li>
+    <li><a class="active" href="lista.html">lista</a></li>
+    <li><a href="orarend.html">Órarend</a></li>
+    <li><a href="pizza.html">Pizza</a></li>
+  </ul>
+
     <div class="content">
 
-        <h1 style="color: rgb(8, 66, 61);">Mátyás Máté</h1>
-        <h2 style="color: darkslategrey;">Listák</h2>
+        <h1 style="color: rgb(66, 87, 97);">Mátyás Máté</h1>
+        <h2 style="color: rgb(66, 87, 97);">Listák</h2>
 
-        <p style="background-color:rgb(0, 7, 48); color: white; width: 300px;">A kedvenc tantárgyaim:</p>
-        <ol style="color:rgb(0, 8, 78);">
-            <li>IKT</li>
-            <li>MATEK</li>
-            <li>TESI</li>
-        </ol>
+    </ul><p style="background-color:rgb(0, 7, 48); color: white; width: 300px;">A kedvenc tantárgyaim:</p>
+    <ol style="color:rgb(0, 8, 78);">
+        <li>IKT</li>
+        <br>
+        <li>MATEK</li>
+        <br>
+        <li>TESI</li>
+        <br>
+    </ol>
 
-        <p style="background-color:rgb(0, 7, 48);color:white; width: 300px;">A kedvenc szabadidős tevékenységeim:</p>
-        <ul style="color:rgb(0, 8, 78);">
+    <p style="background-color:rgb(0, 7, 48);color:white; width: 300px;">A kedvenc szabadidős tevékenységeim:</p>
+        <ul;>
             <li type="circle">Forma-1 nézés</li>
+            <br>
             <li type="circle">Számítógépezés</li>
+            <br>
             <li type="circle">Kerékpározás</li>
+            <br>
         </ul>
     </div>
 </body>

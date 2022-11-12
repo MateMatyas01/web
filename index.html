@@ -1,33 +1,54 @@
 <!DOCTYPE html>
 <html lang="hu">
 <head>
+  <link rel="stylesheet" href="mystyle.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mate Oldala</title>
 </head>
-<body bgcolor="#FFEBD">
-  <div class="sidebar">
-    <table>
-    <tr>
-      <button style="background-color: #ffffff; scale: 1;font-size: 0.6cm; font-style: italic ; font-family: fantasy; border-color: rgb(197, 0, 0); border-width: 5px; border-bottom-right-radius: 11px; color: #273450;" onclick="document.location='index.html'"> RÓLAM
-      </button>
-    </tr>
-    <tr>
-      <button style="background-color: #ffffff; scale: 1;font-size: 0.6cm; font-style: italic; font-family: fantasy; border-color: #274b74; color: #273450;" onclick="document.location='keplink.html'"> KÉPLINK
-      </button>
-    </tr>
-    <tr>
-      <button style="background-color: #ffffff; scale: 1;font-size: 0.6cm; font-style: italic; font-family: fantasy; border-color: #274b74; color: #273450; " onclick="document.location='lista.html'"> LISTÁK
-      </button>
-    </tr>
-    <tr><button style="background-color: #ffffff; scale: 1;font-size: 0.6cm; font-style: italic ; font-family: fantasy; border-color:#274b74; color: #273450;" onclick="document.location='orarend.html'"> ÓRAREND
-    </tr>
-    <tr>
-      <button style="background-color: #ffffff; scale: 1;font-size: 0.6cm; font-style: italic ; font-family: fantasy; border-color:#274b74; color: #273450;" onclick="document.location='pizza.html'"> PIZZA
-    </tr>
-    </table>
-    </div>
-  <div class="content">
+<body bgcolor="FF9F69">
+
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(34, 34, 34);
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: rgb(255, 102, 0);
+}
+
+.active {
+  background-color: #ff5100;
+}
+</style>
+  <ul>
+    <li><a class="active" href="index.html">Rólam</a></li>
+    <li><a href="keplink.html">Képlink</a></li>
+    <li><a href="lista.html">lista</a></li>
+    <li><a href="orarend.html">Órarend</a></li>
+    <li><a href="pizza.html">Pizza</a></li>
+  </ul>
+
+
+  </style>
+  
+    </div>  <div class="content">
           <H1 style="font-family: Arial Narrow;">máté</H1>
           <H2 style="font-family: Arial Narrow;">máté</H2>
           <H3 style="font-family: Arial Narrow;">máté</H3>
