@@ -13,141 +13,139 @@
     <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     
+    <style>
+ 
+      footer {
+      text-align: center;
+      padding: 3px;
+      background-color: rgb(45, 41, 78);
+      color: white;
+      display: block;
+    }
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: rgb(34, 34, 34);
+    }
+    
+    li {
+      float: left;
+    }
+    
+    li a {
+      display: block;
+      color: rgb(255, 255, 255);
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    li a:hover:not(.active) {
+      background-color: rgb(184, 110, 42);
+    }
+    
+    .active {
+      background-color: #b86517;
+    }
+    </style>
+
 </head>
+
 <body bgcolor="#FFE3C9">
 
-<style>
-  footer {
-  text-align: center;
-  padding: 3px;
-  background-color: rgb(45, 41, 78);
-  color: white;
-  display: block;
-}
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: rgb(34, 34, 34);
-}
+      <ul>
+        <li><a href="index.html">Rólam</a></li>
+        <li><a href="keplink.html">Képlink</a></li>
+        <li><a href="lista.html">lista</a></li>
+        <li><a href="orarend.html">Órarend</a></li>
+        <li><a class="active" href="pizza.html">Pizza</a></li>
+        <li><a href="evszakok.html">Évszakok</a></li>
+        <li><a href="szamolo.html">Számoló</a></li>
+      </ul>
 
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: rgb(255, 255, 255);
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover:not(.active) {
-  background-color: rgb(184, 110, 42);
-}
-
-.active {
-  background-color: #b86517;
-}
-</style>
-  <ul>
-    <li><a href="index.html">Rólam</a></li>
-    <li><a href="keplink.html">Képlink</a></li>
-    <li><a href="lista.html">lista</a></li>
-    <li><a href="orarend.html">Órarend</a></li>
-    <li><a class="active" href="pizza.html">Pizza</a></li>
-    <li><a href="evszakok.html">Évszakok</a></li>
-  </ul>
-
-
-  </style>
-
-        <img align="right" src="img/pizza.png" alt="pizza" height="300">
-        <h1 style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: #DA772A; "><em>PIZZA RENDELÉS</em></h1>
-
-        <form action="pizza.html">
-            <fieldset>
-                <legend>Vevő adatai</legend>
-                Név:    <input type="text">
-                <br>
-                <br>
-                Telefonszám: <input type="text">
-                <br>
-                <br>
-                Falu/Város: <input type="text">
-                <br>
-                <br>
-                Utca: <input type="text">
-                Házszám: <input type="text">
-            </fieldset>
-            <fieldset>
-                <legend>Pizza</legend>
-                Méret:
-                <br>
-                <input type="radio" name="kicsi" value="26cm"> 26cm
-                <br>
-                <input type="radio" name="közepes" value="34"> 34cm
-                <br>
-                <input type="radio" name="nagy" value="52"> 52cm
-                <br>
-                <br>
-                Feltétek:
-                <br>
-                <input type="checkbox" name="sajt" id="">  Sajt
-                <br>
-                <input type="checkbox" name="sonka" id=""> Sonka
-                <br>
-                <input type="checkbox" name="Gomba" id=""> Gomba
-                <br>
-                <input type="checkbox" name="Kukorica" id=""> Kukorica
-                <br>
-                <input type="checkbox" name="bacon" id=""> Bacon
-                <br>
-                <input type="checkbox" name="lilahagyma" id=""> lilahagyma
-                <br>
-                <br>
-                Mennyiség: <input type="number">
-            </fieldset>
-            <fieldset>
-                <legend>Üdítők</legend>
-                <table>
-                    <tr>
-                        <td><input type="checkbox"> Coca Cola </td>
-                        <td align="right"><input type="number"> db.</td>
-                        <br>
-                    </tr>
-                        <br>
-                        <td><input type="checkbox"> Coca Cola Zero</td>
-                        <td><input type="number"> db.</td>
-                        <br>
-                    </tr>
-                        <td><input type="checkbox"> Fanta </td>
-                        <td><input type="number"> db.</td>
-                        <br>
-                    </tr>
-                        <td><input type="checkbox"> Xixo Tea </td>
-                        <td><input type="number"> db.</td>
-                        <br>
-                    </tr>
-                        <td><input type="checkbox"> Sprite </td>
-                        <td><input type="number"> db.</td>
-                    </tr>
-                </table>
-                <br>
-            </fieldset>
-            <fieldset>
-                <legend>Végezetül</legend>
-                Egyéb kivánság:
-                <br>
-                <textarea cols=40 rows=4></textarea>
-                <br>
-                <input type='reset' name="visszaállítás" value="Reset"> <input type='submit' value="Submit">
-            </fieldset>
-        </form>
-
-    </div>
+<img align="right" src="img/pizza.png" alt="pizza" height="300">
+<h1 style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: #DA772A;"><em>PIZZA RENDELÉS</em></h1>
+<form action="pizza.html">
+<fieldset>
+<legend>Vevő adatai</legend>
+Név:    <input type="text">
+<br>
+<br>
+Telefonszám: <input type="text">
+<br>
+<br>
+Falu/Város: <input type="text">
+<br>
+<br>
+Utca: <input type="text">
+Házszám: <input type="text">
+</fieldset>
+<fieldset>
+<legend>Pizza</legend>
+Méret:
+<br>
+<input type="radio" name="kicsi" value="26cm"> 26cm
+<br>
+<input type="radio" name="közepes" value="34"> 34cm
+<br>
+<input type="radio" name="nagy" value="52"> 52cm
+<br>
+<br>
+Feltétek:
+<br>
+<input type="checkbox" name="sajt" id="">  Sajt
+<br>
+<input type="checkbox" name="sonka" id=""> Sonka
+<br>
+<input type="checkbox" name="Gomba" id=""> Gomba
+<br>
+<input type="checkbox" name="Kukorica" id=""> Kukorica
+<br>
+<input type="checkbox" name="bacon" id=""> Bacon
+<br>
+<input type="checkbox" name="lilahagyma" id=""> lilahagyma
+<br>
+<br>
+Mennyiség: <input type="number">
+</fieldset>
+<fieldset>
+<legend>Üdítők</legend>
+                  <table>
+                      <tr>
+                          <td><input type="checkbox"> Coca Cola </td>
+                          <td align="right"><input type="number"> db.</td>
+                          <br>
+                      </tr>
+                          <br>
+                          <td><input type="checkbox"> Coca Cola Zero</td>
+                          <td><input type="number"> db.</td>
+                          <br>
+                      </tr>
+                          <td><input type="checkbox"> Fanta </td>
+                          <td><input type="number"> db.</td>
+                          <br>
+                      </tr>
+                          <td><input type="checkbox"> Xixo Tea </td>
+                          <td><input type="number"> db.</td>
+                          <br>
+                      </tr>
+                          <td><input type="checkbox"> Sprite </td>
+                          <td><input type="number"> db.</td>
+                      </tr>
+                  </table>
+                  <br>
+              </fieldset>
+              <fieldset>
+                  <legend>Végezetül</legend>
+                  Egyéb kivánság:
+                  <br>
+                  <textarea cols=40 rows=4></textarea>
+                  <br>
+                  <input type='reset' name="visszaállítás" value="Reset"> <input type='submit' value="Submit">
+              </fieldset>
+          </form>
 <footer>
   <p>Máté Oldala</p>
 </footer>
